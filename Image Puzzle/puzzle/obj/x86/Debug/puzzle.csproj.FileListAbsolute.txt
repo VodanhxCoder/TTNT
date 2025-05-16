@@ -1,0 +1,10 @@
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\bin\Debug\puzzle.exe.config
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\bin\Debug\puzzle.exe
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\bin\Debug\puzzle.pdb
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.csproj.AssemblyReference.cache
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\WindowsFormsApplication1.frmPuzzleGame.resources
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.csproj.GenerateResource.cache
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.csproj.CoreCompileInputs.cache
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.exe
+C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.pdb
