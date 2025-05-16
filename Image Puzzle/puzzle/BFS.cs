@@ -9,8 +9,9 @@ namespace A_BFS
 	class State
 	{
 		public List<int> trangThai { get; set; }
-        public State nutCha { get; set; }
+        public State nutCha { get; set; } //cho việc lần vết dữ liệu 
 		public int heuris;
+
 		//khởi tạo mặc định
         public State() { }
 
@@ -31,16 +32,16 @@ namespace A_BFS
 				}
 			}
 			this.heuris = oSai;
-			return oSai;
+			return oSai;  //trả về số ô sai 
 		}
 		//hàm này để tách từ 1 mảng truyền vào theo mỗi bước đi(trái, phải, lên, xuống) sẽ tạo ra bao nhiêu mảng nữa
 		//mỗi bước đi được sẽ đưa vào mangPhatSinh
 		public List<List<int>> PhatSinhMangTuMotMang(List<int> mangBatKy)
 		{
 			List<List<int>> mangPhatSinh = new List<List<int>>();
-			int i = mangBatKy.IndexOf(9);
+			int i = mangBatKy.IndexOf(9); //tìm vị trí ô trống trong mảng 
 			//để đi sang phải
-			if (i % 3 < 2)
+			if (i % 3 < 2) // nếu ở cột 0 1 thì đc sang phải 
 			{
 				List<int> copy = new List<int>(mangBatKy);
 				int temp = copy[i];
@@ -50,7 +51,7 @@ namespace A_BFS
 
 			}
 			//để đi sang trái
-			if (i % 3 > 0)
+			if (i % 3 > 0) 
 			{
 				List<int> copy = new List<int>(mangBatKy);
 				int temp = copy[i];
@@ -78,7 +79,7 @@ namespace A_BFS
 			}
 			return mangPhatSinh;
 		}
-		//đóng gói tất cả mảng có thể phát sinh từ 1 mảng truyền vào (là hàm phía trên) thành 1 state
+		//đóng gói tất cả mảng có thể phát sinh từ 1 mảng truyền vào (là hàm phía trên) thành 1 state (để thêm nút cha)
 		public List<State> PhanTachTrangThai()
 		{
 			List<State> phatSinh = new List<State>();
@@ -119,7 +120,33 @@ namespace A_BFS
 			}
 			Console.Write("\n\n");
 		}
-	}
+
+
+        // Hàm kiểm tra trạng thái bất khả thi
+     public bool KiemTraBatKhaThi(State trangThaiDich, int soDaoNguocDich)
+    {
+        int soDaoNguocHienTai = TinhSoDaoNguoc(this.trangThai);
+        return (soDaoNguocHienTai % 2) != (soDaoNguocDich % 2);
+    }
+
+    private int TinhSoDaoNguoc(List<int> mang)
+    {
+        int soDaoNguoc = 0;
+        for (int i = 0; i < mang.Count; i++)
+        {
+            if (mang[i] == 9) continue;
+            for (int j = i + 1; j < mang.Count; j++)
+            {
+                if (mang[j] == 9) continue;
+                if (mang[i] > mang[j])
+                {
+                    soDaoNguoc++;
+                }
+            }
+        }
+        return soDaoNguoc;
+    }	
+    }
 
 	class BFS
 	{
@@ -127,17 +154,38 @@ namespace A_BFS
 		State trangThaiDich;
 		//danh sách các trạng thái đã duyệt
         List<State> trangThaiDaDuyet = null;
-		public int dem = 0;
+
+        private int soDaoNguocDich; //lưu số đảo ngược của trạng thái đích
+        public int dem = 0;
 
         public BFS(State trangThaiDau, State trangThaiDich)
-		{
-			this.trangThaiDau = trangThaiDau;
-			this.trangThaiDich = trangThaiDich;
+        {
+            this.trangThaiDau = trangThaiDau;
+            this.trangThaiDich = trangThaiDich;
             trangThaiDaDuyet = new List<State>();
+            this.soDaoNguocDich = TinhSoDaoNguoc(trangThaiDich.trangThai); // Tính một lần
         }
 
-		//kiểm tra 2 trạng thái có giống nhau hay không?
-		public bool KiemTraTrangThaiTrung(State a, State b)
+        private int TinhSoDaoNguoc(List<int> mang)
+        {
+            int soDaoNguoc = 0;
+            for (int i = 0; i < mang.Count; i++)
+            {
+                if (mang[i] == 9) continue;
+                for (int j = i + 1; j < mang.Count; j++)
+                {
+                    if (mang[j] == 9) continue;
+                    if (mang[i] > mang[j])
+                    {
+                        soDaoNguoc++;
+                    }
+                }
+            }
+            return soDaoNguoc;
+        }
+
+        //kiểm tra 2 trạng thái có giống nhau hay không?
+        public bool KiemTraTrangThaiTrung(State a, State b)
 		{
 			bool giongnhau = true;
 			for (int i = 0; i < b.trangThai.Count; i++)
@@ -189,9 +237,9 @@ namespace A_BFS
 
 			while (danhSachDinhDuyet.Count > 0)
 			{
-				State ptLayRa = danhSachDinhDuyet[0];
+				State ptLayRa = danhSachDinhDuyet[0]; //có heuris bé nhất 
 				dem++;
-				trangThaiDaDuyet.Add(ptLayRa);
+				trangThaiDaDuyet.Add(ptLayRa); 
 				danhSachDinhDuyet.RemoveAt(0);
 
 				if (ptLayRa.KiemTraDenDich(trangThaiDich) == true)
@@ -200,7 +248,7 @@ namespace A_BFS
 					break;
 				}
 
-				//ptLayRa đem đi phân tách xem được mấy trạng thái
+				//ptLayRa đem đi phân tách xem được mấy trạng thái 
 				List<State> hungPhanTachTrangThai = ptLayRa.PhanTachTrangThai();
 				foreach (var item in hungPhanTachTrangThai)
 				{
@@ -214,7 +262,7 @@ namespace A_BFS
 						Console.WriteLine(dem);
 						return ketQua;
 					}
-					if (!KiemTraTrangThaiChuaTrongList(trangThaiDaDuyet, item))
+					if (!KiemTraTrangThaiChuaTrongList(trangThaiDaDuyet, item)) // không ktra đi ngược lại 
 					{
 						item.DemOSai(trangThaiDich);
 						danhSachDinhDuyet.Add(item);

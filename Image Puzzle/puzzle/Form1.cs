@@ -8,6 +8,7 @@ using System.Threading;
 using System.Windows.Forms;
 
 
+
 namespace WindowsFormsApplication1
 {
     public partial class frmPuzzleGame : Form
@@ -54,18 +55,102 @@ namespace WindowsFormsApplication1
         {
             ChoiLai();
         }
-
+        private int TinhSoDaoNguoc(List<int> mang)
+        {
+            int soDaoNguoc = 0;
+            for (int i = 0; i < mang.Count; i++)
+            {
+                if (mang[i] == 9) continue;
+                for (int j = i + 1; j < mang.Count; j++)
+                {
+                    if (mang[j] == 9) continue;
+                    if (mang[i] > mang[j])
+                    {
+                        soDaoNguoc++;
+                    }
+                }
+            }
+            return soDaoNguoc;
+        }
         List<int> ChoiLai()
         {
-            //đoạn code comment sau dùng để random ngẫu nhiên các trạng thái, nếu số ô bị sai quá nhiều thuật toán sẽ k chạy được
+            List<int> mangRandom = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            Random rand = new Random();
+            State trangThaiDich = new State(mangCuoi);
+            int soDaoNguocDich = TinhSoDaoNguoc(mangCuoi); // Tính một lần
+            int maxAttempts = 20; 
 
-            //List<int> mangRandom = new List<int>(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 });
+            for (int attempt = 0; attempt < maxAttempts; attempt++)
+            {
+                // Xáo trộn mảng
+                for (int i = mangRandom.Count - 1; i > 0; i--)
+                {
+                    int j = rand.Next(0, i + 1);
+                    int temp = mangRandom[i];
+                    mangRandom[i] = mangRandom[j];
+                    mangRandom[j] = temp;
+                }
+
+                // Kiểm tra tính khả thi
+                State trangThaiDau = new State(mangRandom);
+                if (!trangThaiDau.KiemTraBatKhaThi(trangThaiDich, soDaoNguocDich))
+                {
+                    // Cập nhật giao diện
+                    try
+                    {
+                        for (int i = 0; i < 9; i++)
+                        {
+                            if (mangGoc.Count > mangRandom[i] - 1 && mangGoc[mangRandom[i] - 1] != null)
+                            {
+                                ((PictureBox)gbKhung.Controls[i]).Image = mangGoc[mangRandom[i] - 1];
+                                if (mangRandom[i] == 9)
+                                    chiSoOTrong = i;
+                            }
+                            else
+                            {
+                                throw new Exception("Hình ảnh trong mangGoc không hợp lệ.");
+                            }
+                        }
+                        // Kiểm tra trạng thái thắng
+                        if (!KiemTraWin())
+                        {
+                            Application.DoEvents();
+                            return mangRandom;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Lỗi cập nhật giao diện: {ex.Message}");
+                        continue;
+                    }
+                }
+            }
+
+            // Dùng test case mặc định
+            mangRandom = mangTestCase[0];
+            try
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    ((PictureBox)gbKhung.Controls[i]).Image = mangGoc[mangRandom[i] - 1];
+                    if (mangRandom[i] == 9)
+                        chiSoOTrong = i;
+                }
+                Application.DoEvents();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi dùng test case mặc định: {ex.Message}");
+            }
+            return mangRandom;
+
+            //Random r = new Random();
+            //int j = r.Next(0, 5);
+            ////j = 2;
+            //List<int> mangRandom = mangTestCase[j];
+
             //do
             //{
-            //    int j;
-            //    //thư viện LinQ hổ trợ hàm trộn mảng (search trên stackoverflow)
-            //    mangRandom = mangRandom.OrderBy(a => Guid.NewGuid()).ToList();
-
             //    for (int i = 0; i < 9; i++)
             //    {
             //        ((PictureBox)gbKhung.Controls[i]).Image = mangGoc[mangRandom[i] - 1];
@@ -74,43 +159,39 @@ namespace WindowsFormsApplication1
             //    }
             //} while (KiemTraWin());
             //return mangRandom;
-
-            Random r = new Random();
-            int j = r.Next(0, 5);
-            //j = 2;
-            List<int> mangRandom = mangTestCase[j];
-
-            do
-            {
-                for (int i = 0; i < 9; i++)
-                {
-                    ((PictureBox)gbKhung.Controls[i]).Image = mangGoc[mangRandom[i] - 1];
-                    if (mangRandom[i] == 9)
-                        chiSoOTrong = i;
-                }
-            } while (KiemTraWin());
-            return mangRandom;
         }
 
         private void btnChoiLai_Click(object sender, EventArgs e)
         {
-            DialogResult YesOrNo = new DialogResult();     
+            DialogResult YesOrNo = new DialogResult();
             if (lblThoiGianDem.Text != "00:00:00")
             {
-                YesOrNo = MessageBox.Show("Bạn có muốn chơi lại hay không?","Game Ghép Hình", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                YesOrNo = MessageBox.Show("Bạn có muốn chơi lại hay không?", "Game Ghép Hình", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             }
             if (YesOrNo == DialogResult.Yes || lblThoiGianDem.Text == "00:00:00")
             {
-				//nếu người chơi chọn đồng ý chơi lại hoặc thời gian còn là chưa bắt đầu thì reset lại
-				// tất cả các thông số như là đếm thời gian, số bước đi.
-				ChoiLai();
-                timer.Reset();
-                lblThoiGianDem.Text = "00:00:00";
-				soBuocDi = 0;
+                // Đặt lại trạng thái chương trình
+                ketQuaCuoiCung.Clear(); // Xóa đường đi cũ
+                currentState = 0; // Đặt lại chỉ số trạng thái
+                soBuocDi = 0;
                 lblBuocDi.Text = "Số Bước Đi: 0";
                 lblBuocDuyet.Text = "Số bước duyệt: 0";
-                lblTimeGiai.Text = "Thời gian giải : 0.0 ms";
+                lblTimeGiai.Text = "Thời gian giải: 0.0 ms";
+                timer.Stop();
+                timer.Reset();
+                lblThoiGianDem.Text = "00:00:00";
 
+              
+
+                // Gọi ChoiLai để tạo trạng thái mới
+                try
+                {
+                    ChoiLai();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi tạo trạng thái mới: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -129,34 +210,6 @@ namespace WindowsFormsApplication1
         private void btnGiai_Click(object sender, EventArgs e)
         {
            
-   //         List<int> mangDau = ChoiLai(); //tạo hàm random mảng đầu vào
-   //         State trThaiDau = new State(mangDau);
-   //         State trThaiCuoi = new State(mangCuoi);
-   //         BFS bfs = new BFS(trThaiDau, trThaiCuoi);
-
-			//Stopwatch timer_tmp = new Stopwatch();
-			//timer_tmp.Reset();
-   //         lblTimeGiai.Text = "Thời gian giải: 0.0 ms";
-			//timer_tmp.Start();
-			
-			//this.ketQuaCuoiCung = bfs.Solve();
-
-			//timer.Stop();
-			//lblTimeGiai.Text = "Thời gian giải: " + timer_tmp.Elapsed.TotalMilliseconds.ToString() + " ms";
-
-			////đảo mảng lại vì kqua tra về là đường đi ngược từ dưới lên
-			//this.ketQuaCuoiCung.Reverse();
-			//this.lblBuocDuyet.Text = "Số Bước Duyệt: " + bfs.dem.ToString();
-			//this.currentState = 0;
-
-			//this.lblBuocDi.Text = "Số Bước Đi: " + (currentState + 1).ToString() + "/" + this.ketQuaCuoiCung.Count.ToString();
-
-			//State tmp = this.ketQuaCuoiCung[this.currentState];
-			//List<int> mang = tmp.trangThai;
-			//for (int j = 0; j < mang.Count; j++)
-			//{
-			//	((PictureBox)gbKhung.Controls[j]).Image = mangGoc[mang[j]-1];
-			//}
 			
 		}
 
@@ -352,6 +405,8 @@ namespace WindowsFormsApplication1
                 }
             }
         }
+
+
 
         //sự kiện click và nút tạm dừng, tạm dừng thì tắt màn hình lại không cho người chơi xem các ô nữa
         private void PauseOrResume(object sender, EventArgs e)
