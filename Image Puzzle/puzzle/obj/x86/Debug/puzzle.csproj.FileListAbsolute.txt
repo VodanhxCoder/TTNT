@@ -8,3 +8,13 @@ C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\
 C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.csproj.CoreCompileInputs.cache
 C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.exe
 C:\Users\Minh Khue\Downloads\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.pdb
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.csproj.AssemblyReference.cache
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\WindowsFormsApplication1.frmPuzzleGame.resources
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.csproj.GenerateResource.cache
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.csproj.CoreCompileInputs.cache
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.exe
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\obj\x86\Debug\puzzle.pdb
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\bin\Debug\puzzle.exe.config
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\bin\Debug\puzzle.exe
+E:\tri-tue-nhan-tao\Image Puzzle\puzzle\bin\Debug\puzzle.pdb

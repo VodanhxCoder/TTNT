@@ -161,50 +161,7 @@ namespace A_BFS
 			return contains;
 		}
 
-		public List<State> Solve()
-		{
-			dem = 0;
-			List<State> ketQua = new List<State>();
-			//hàng đợi enqueue thêm vào cuối, và dequeue lấy ra ở đầu và remove luôn ptu đó
-			Queue<State> danhSachDinhDuyet = new Queue<State>();
-
-			danhSachDinhDuyet.Enqueue(trangThaiDau);
-
-			while (danhSachDinhDuyet.Count > 0)
-			{
-				State ptLayRa = danhSachDinhDuyet.Dequeue();
-                trangThaiDaDuyet.Add(ptLayRa);
-				dem++;
-				//dòng này để in ra các trạng thái mảng đã duyệt dưới dạng ma trận 3x3
-				//ptLayRa.inRaMotState();
-
-				if (ptLayRa.KiemTraDenDich(trangThaiDich) == true)
-				{
-					Console.WriteLine("Ban da chien thang!.....");
-					break;
-				}
-
-				//ptLayRa đem đi phân tách coi được mấy trạng thái
-				List<State> hungPhanTachTrangThai = ptLayRa.PhanTachTrangThai();
-				foreach (var item in hungPhanTachTrangThai)
-				{
-					if (item.KiemTraDenDich(trangThaiDich) == true)
-					{
-						Console.WriteLine("Ban da chien thang!.....");
-						//lằn vết lúc này sẽ trả về danh sách đường đi nhưng bị ngược => qua nút Giải reverse nó
-						LanVet(ketQua, item);
-						//in ra đường đi tìm được trên console dưới dạng ma trận 3x3
-						inRaDuongDi(ketQua);
-						return ketQua;
-					}
-					if (!KiemTraTrangThaiChuaTrongList(trangThaiDaDuyet, item) )
-					{                    
-						danhSachDinhDuyet.Enqueue(item);
-					}
-				}
-			}
-			return ketQua;
-		}
+		
 		public void SapXepCacTrangThaiTheoHeuris(List<State> temp)
 		{
 			for (int i = 0; i < temp.Count-1; i++)
@@ -236,9 +193,6 @@ namespace A_BFS
 				dem++;
 				trangThaiDaDuyet.Add(ptLayRa);
 				danhSachDinhDuyet.RemoveAt(0);
-			
-				//dòng này để in ra các trạng thái mảng đã duyệt dưới dạng ma trận 3x3
-				//ptLayRa.inRaMotState();
 
 				if (ptLayRa.KiemTraDenDich(trangThaiDich) == true)
 				{
@@ -246,7 +200,7 @@ namespace A_BFS
 					break;
 				}
 
-				//ptLayRa đem đi phân tách coi được mấy trạng thái
+				//ptLayRa đem đi phân tách xem được mấy trạng thái
 				List<State> hungPhanTachTrangThai = ptLayRa.PhanTachTrangThai();
 				foreach (var item in hungPhanTachTrangThai)
 				{

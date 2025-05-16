@@ -1,29 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\",
+  "WorkspaceRootPath": "E:\\tri-tue-nhan-tao\\Image Puzzle\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|c:\\users\\minh khue\\downloads\\tri-tue-nhan-tao\\image puzzle\\puzzle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|e:\\tri-tue-nhan-tao\\image puzzle\\puzzle\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:2:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|c:\\users\\minh khue\\downloads\\tri-tue-nhan-tao\\image puzzle\\puzzle\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:2:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:1:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|c:\\users\\minh khue\\downloads\\tri-tue-nhan-tao\\image puzzle\\puzzle\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:1:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\bfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|c:\\users\\minh khue\\downloads\\tri-tue-nhan-tao\\image puzzle\\puzzle\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|c:\\users\\minh khue\\downloads\\tri-tue-nhan-tao\\image puzzle\\puzzle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|c:\\users\\minh khue\\downloads\\tri-tue-nhan-tao\\image puzzle\\puzzle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|e:\\tri-tue-nhan-tao\\image puzzle\\puzzle\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\imageprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|e:\\tri-tue-nhan-tao\\image puzzle\\puzzle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{17811774-D719-4952-9B1B-B49CD12B5C5B}|puzzle\\puzzle.csproj|solutionrelative:puzzle\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -34,8 +30,36 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs",
+              "RelativeDocumentMoniker": "puzzle\\Form1.cs",
+              "ToolTip": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs",
+              "RelativeToolTip": "puzzle\\Form1.cs",
+              "ViewState": "AgIAADABAAAAAAAAAAAiwDcBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T14:07:30.066Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ImageProcessor.cs",
+              "DocumentMoniker": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\ImageProcessor.cs",
+              "RelativeDocumentMoniker": "puzzle\\ImageProcessor.cs",
+              "ToolTip": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\ImageProcessor.cs",
+              "RelativeToolTip": "puzzle\\ImageProcessor.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:20:18.306Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -50,80 +74,41 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BFS.cs",
-              "DocumentMoniker": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\BFS.cs",
-              "RelativeDocumentMoniker": "puzzle\\BFS.cs",
-              "ToolTip": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\BFS.cs",
-              "RelativeToolTip": "puzzle\\BFS.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Program.cs",
+              "RelativeDocumentMoniker": "puzzle\\Program.cs",
+              "ToolTip": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Program.cs",
+              "RelativeToolTip": "puzzle\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T15:51:45.845Z",
+              "WhenOpened": "2025-05-16T08:25:50.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ImageProcessor.cs",
-              "DocumentMoniker": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\ImageProcessor.cs",
-              "RelativeDocumentMoniker": "puzzle\\ImageProcessor.cs",
-              "ToolTip": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\ImageProcessor.cs",
-              "RelativeToolTip": "puzzle\\ImageProcessor.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAA6wEgAAAAwAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs",
+              "RelativeDocumentMoniker": "puzzle\\Form1.cs",
+              "ToolTip": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs [Design]",
+              "RelativeToolTip": "puzzle\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T15:10:14.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-16T06:43:00.239Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs",
-              "RelativeDocumentMoniker": "puzzle\\Form1.cs",
-              "ToolTip": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs",
-              "RelativeToolTip": "puzzle\\Form1.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAmwEwAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T14:07:30.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Program.cs",
-              "RelativeDocumentMoniker": "puzzle\\Program.cs",
-              "ToolTip": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Program.cs",
-              "RelativeToolTip": "puzzle\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T14:00:53.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "BFS.cs",
-              "DocumentMoniker": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\BFS.cs",
+              "DocumentMoniker": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\BFS.cs",
               "RelativeDocumentMoniker": "puzzle\\BFS.cs",
-              "ToolTip": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\BFS.cs",
+              "ToolTip": "E:\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\BFS.cs",
               "RelativeToolTip": "puzzle\\BFS.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAIAwwF4AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAkwLEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-15T14:00:39.894Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs",
-              "RelativeDocumentMoniker": "puzzle\\Form1.cs",
-              "ToolTip": "C:\\Users\\Minh Khue\\Downloads\\tri-tue-nhan-tao\\Image Puzzle\\puzzle\\Form1.cs [Design]",
-              "RelativeToolTip": "puzzle\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T14:00:48.283Z",
-              "EditorCaption": " [Design]"
             }
           ]
         },

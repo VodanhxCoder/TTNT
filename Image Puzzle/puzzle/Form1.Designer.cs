@@ -19,16 +19,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPuzzleGame));
             this.gbKhung = new System.Windows.Forms.GroupBox();
-            this.pbx1 = new System.Windows.Forms.PictureBox();
-            this.pbx2 = new System.Windows.Forms.PictureBox();
-            this.pbx3 = new System.Windows.Forms.PictureBox();
-            this.pbx4 = new System.Windows.Forms.PictureBox();
-            this.pbx5 = new System.Windows.Forms.PictureBox();
-            this.pbx6 = new System.Windows.Forms.PictureBox();
-            this.pbx7 = new System.Windows.Forms.PictureBox();
-            this.pbx8 = new System.Windows.Forms.PictureBox();
-            this.pbx9 = new System.Windows.Forms.PictureBox();
-            this.gbAnhGoc = new System.Windows.Forms.GroupBox();
             this.btnChoiLai = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.lblBuocDi = new System.Windows.Forms.Label();
@@ -41,8 +31,17 @@
             this.lblBuocDuyet = new System.Windows.Forms.Label();
             this.btnTamDung = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.btnBFS = new System.Windows.Forms.Button();
             this.btnTaiAnh = new System.Windows.Forms.Button();
+            this.gbAnhGoc = new System.Windows.Forms.GroupBox();
+            this.pbx1 = new System.Windows.Forms.PictureBox();
+            this.pbx2 = new System.Windows.Forms.PictureBox();
+            this.pbx3 = new System.Windows.Forms.PictureBox();
+            this.pbx4 = new System.Windows.Forms.PictureBox();
+            this.pbx5 = new System.Windows.Forms.PictureBox();
+            this.pbx6 = new System.Windows.Forms.PictureBox();
+            this.pbx7 = new System.Windows.Forms.PictureBox();
+            this.pbx8 = new System.Windows.Forms.PictureBox();
+            this.pbx9 = new System.Windows.Forms.PictureBox();
             this.gbKhung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbx1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbx2)).BeginInit();
@@ -67,128 +66,13 @@
             this.gbKhung.Controls.Add(this.pbx8);
             this.gbKhung.Controls.Add(this.pbx9);
             this.gbKhung.Location = new System.Drawing.Point(44, 5);
-            this.gbKhung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbKhung.Margin = new System.Windows.Forms.Padding(4);
             this.gbKhung.Name = "gbKhung";
-            this.gbKhung.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbKhung.Padding = new System.Windows.Forms.Padding(4);
             this.gbKhung.Size = new System.Drawing.Size(569, 533);
             this.gbKhung.TabIndex = 0;
             this.gbKhung.TabStop = false;
             this.gbKhung.Text = "Khung";
-            // 
-            // pbx1
-            // 
-            this.pbx1.Image = global::WindowsFormsApplication1.Properties.Resources._1;
-            this.pbx1.Location = new System.Drawing.Point(23, 28);
-            this.pbx1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx1.Name = "pbx1";
-            this.pbx1.Size = new System.Drawing.Size(173, 160);
-            this.pbx1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx1.TabIndex = 0;
-            this.pbx1.TabStop = false;
-            this.pbx1.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx2
-            // 
-            this.pbx2.Image = global::WindowsFormsApplication1.Properties.Resources._2;
-            this.pbx2.Location = new System.Drawing.Point(199, 28);
-            this.pbx2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx2.Name = "pbx2";
-            this.pbx2.Size = new System.Drawing.Size(173, 160);
-            this.pbx2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx2.TabIndex = 0;
-            this.pbx2.TabStop = false;
-            this.pbx2.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx3
-            // 
-            this.pbx3.Location = new System.Drawing.Point(375, 28);
-            this.pbx3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx3.Name = "pbx3";
-            this.pbx3.Size = new System.Drawing.Size(173, 160);
-            this.pbx3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx3.TabIndex = 0;
-            this.pbx3.TabStop = false;
-            this.pbx3.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx4
-            // 
-            this.pbx4.Location = new System.Drawing.Point(23, 191);
-            this.pbx4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx4.Name = "pbx4";
-            this.pbx4.Size = new System.Drawing.Size(173, 160);
-            this.pbx4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx4.TabIndex = 0;
-            this.pbx4.TabStop = false;
-            this.pbx4.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx5
-            // 
-            this.pbx5.Location = new System.Drawing.Point(199, 191);
-            this.pbx5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx5.Name = "pbx5";
-            this.pbx5.Size = new System.Drawing.Size(173, 160);
-            this.pbx5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx5.TabIndex = 0;
-            this.pbx5.TabStop = false;
-            this.pbx5.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx6
-            // 
-            this.pbx6.Location = new System.Drawing.Point(375, 191);
-            this.pbx6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx6.Name = "pbx6";
-            this.pbx6.Size = new System.Drawing.Size(173, 160);
-            this.pbx6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx6.TabIndex = 0;
-            this.pbx6.TabStop = false;
-            this.pbx6.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx7
-            // 
-            this.pbx7.Location = new System.Drawing.Point(23, 353);
-            this.pbx7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx7.Name = "pbx7";
-            this.pbx7.Size = new System.Drawing.Size(173, 160);
-            this.pbx7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx7.TabIndex = 0;
-            this.pbx7.TabStop = false;
-            this.pbx7.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx8
-            // 
-            this.pbx8.Location = new System.Drawing.Point(199, 353);
-            this.pbx8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx8.Name = "pbx8";
-            this.pbx8.Size = new System.Drawing.Size(173, 160);
-            this.pbx8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx8.TabIndex = 0;
-            this.pbx8.TabStop = false;
-            this.pbx8.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // pbx9
-            // 
-            this.pbx9.Location = new System.Drawing.Point(375, 353);
-            this.pbx9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.pbx9.Name = "pbx9";
-            this.pbx9.Size = new System.Drawing.Size(173, 160);
-            this.pbx9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbx9.TabIndex = 0;
-            this.pbx9.TabStop = false;
-            this.pbx9.Click += new System.EventHandler(this.CachThucDiChuyen);
-            // 
-            // gbAnhGoc
-            // 
-            this.gbAnhGoc.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.original;
-            this.gbAnhGoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gbAnhGoc.Location = new System.Drawing.Point(713, 15);
-            this.gbAnhGoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gbAnhGoc.Name = "gbAnhGoc";
-            this.gbAnhGoc.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gbAnhGoc.Size = new System.Drawing.Size(436, 304);
-            this.gbAnhGoc.TabIndex = 0;
-            this.gbAnhGoc.TabStop = false;
-            this.gbAnhGoc.Text = "Hình Gốc";
-            this.gbAnhGoc.Enter += new System.EventHandler(this.gbAnhGoc_Enter);
             // 
             // btnChoiLai
             // 
@@ -196,7 +80,7 @@
             this.btnChoiLai.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnChoiLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChoiLai.Location = new System.Drawing.Point(713, 466);
-            this.btnChoiLai.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChoiLai.Margin = new System.Windows.Forms.Padding(4);
             this.btnChoiLai.Name = "btnChoiLai";
             this.btnChoiLai.Size = new System.Drawing.Size(128, 52);
             this.btnChoiLai.TabIndex = 1;
@@ -210,7 +94,7 @@
             this.btnThoat.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.Location = new System.Drawing.Point(1012, 466);
-            this.btnThoat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnThoat.Margin = new System.Windows.Forms.Padding(4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(101, 52);
             this.btnThoat.TabIndex = 1;
@@ -222,8 +106,8 @@
             // 
             this.lblBuocDi.AutoSize = true;
             this.lblBuocDi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuocDi.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblBuocDi.Location = new System.Drawing.Point(83, 559);
+            this.lblBuocDi.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.lblBuocDi.Location = new System.Drawing.Point(104, 569);
             this.lblBuocDi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBuocDi.Name = "lblBuocDi";
             this.lblBuocDi.Size = new System.Drawing.Size(102, 19);
@@ -233,11 +117,11 @@
             // lblThoiGianDem
             // 
             this.lblThoiGianDem.AutoSize = true;
-            this.lblThoiGianDem.Font = new System.Drawing.Font("Impact", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThoiGianDem.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThoiGianDem.Location = new System.Drawing.Point(711, 323);
             this.lblThoiGianDem.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThoiGianDem.Name = "lblThoiGianDem";
-            this.lblThoiGianDem.Size = new System.Drawing.Size(248, 75);
+            this.lblThoiGianDem.Size = new System.Drawing.Size(239, 68);
             this.lblThoiGianDem.TabIndex = 3;
             this.lblThoiGianDem.Text = "00:00:00";
             this.lblThoiGianDem.Click += new System.EventHandler(this.lblThoiGianDem_Click);
@@ -250,10 +134,10 @@
             // 
             // btnPrev
             // 
-            this.btnPrev.BackColor = System.Drawing.Color.LightCoral;
+            this.btnPrev.BackColor = System.Drawing.Color.SkyBlue;
             this.btnPrev.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrev.Location = new System.Drawing.Point(289, 559);
-            this.btnPrev.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPrev.Location = new System.Drawing.Point(206, 614);
+            this.btnPrev.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrev.Name = "btnPrev";
             this.btnPrev.Size = new System.Drawing.Size(127, 41);
             this.btnPrev.TabIndex = 5;
@@ -263,10 +147,10 @@
             // 
             // btnNext
             // 
-            this.btnNext.BackColor = System.Drawing.Color.LightCoral;
+            this.btnNext.BackColor = System.Drawing.Color.SkyBlue;
             this.btnNext.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext.Location = new System.Drawing.Point(439, 559);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNext.Location = new System.Drawing.Point(352, 614);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(4);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(119, 41);
             this.btnNext.TabIndex = 6;
@@ -280,12 +164,12 @@
             this.btnGiaiToiUu.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.btnGiaiToiUu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGiaiToiUu.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnGiaiToiUu.Location = new System.Drawing.Point(825, 569);
-            this.btnGiaiToiUu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnGiaiToiUu.Location = new System.Drawing.Point(735, 569);
+            this.btnGiaiToiUu.Margin = new System.Windows.Forms.Padding(4);
             this.btnGiaiToiUu.Name = "btnGiaiToiUu";
-            this.btnGiaiToiUu.Size = new System.Drawing.Size(134, 52);
+            this.btnGiaiToiUu.Size = new System.Drawing.Size(155, 52);
             this.btnGiaiToiUu.TabIndex = 7;
-            this.btnGiaiToiUu.Text = "Giải Tối Ưu";
+            this.btnGiaiToiUu.Text = "Best Frist Search";
             this.btnGiaiToiUu.UseVisualStyleBackColor = false;
             this.btnGiaiToiUu.Click += new System.EventHandler(this.btnGiaiToiUu_Click);
             // 
@@ -314,7 +198,7 @@
             // 
             // btnTamDung
             // 
-            this.btnTamDung.BackColor = System.Drawing.Color.LightCoral;
+            this.btnTamDung.BackColor = System.Drawing.Color.MediumTurquoise;
             this.btnTamDung.Enabled = false;
             this.btnTamDung.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnTamDung.Location = new System.Drawing.Point(863, 466);
@@ -340,28 +224,13 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.btnChoiLai_Click);
             // 
-            // btnBFS
-            // 
-            this.btnBFS.BackColor = System.Drawing.Color.LightCoral;
-            this.btnBFS.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnBFS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBFS.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBFS.Location = new System.Drawing.Point(715, 569);
-            this.btnBFS.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBFS.Name = "btnBFS";
-            this.btnBFS.Size = new System.Drawing.Size(102, 52);
-            this.btnBFS.TabIndex = 1;
-            this.btnBFS.Text = "Giải BFS";
-            this.btnBFS.UseVisualStyleBackColor = false;
-            this.btnBFS.Click += new System.EventHandler(this.btnGiai_Click);
-            // 
             // btnTaiAnh
             // 
             this.btnTaiAnh.BackColor = System.Drawing.Color.LightCoral;
             this.btnTaiAnh.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnTaiAnh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiAnh.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTaiAnh.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnTaiAnh.Location = new System.Drawing.Point(987, 569);
+            this.btnTaiAnh.Location = new System.Drawing.Point(922, 569);
             this.btnTaiAnh.Margin = new System.Windows.Forms.Padding(4);
             this.btnTaiAnh.Name = "btnTaiAnh";
             this.btnTaiAnh.Size = new System.Drawing.Size(102, 52);
@@ -369,6 +238,119 @@
             this.btnTaiAnh.Text = "Tải Ảnh";
             this.btnTaiAnh.UseVisualStyleBackColor = false;
             this.btnTaiAnh.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // gbAnhGoc
+            // 
+            this.gbAnhGoc.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.original;
+            this.gbAnhGoc.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gbAnhGoc.Location = new System.Drawing.Point(713, 15);
+            this.gbAnhGoc.Margin = new System.Windows.Forms.Padding(4);
+            this.gbAnhGoc.Name = "gbAnhGoc";
+            this.gbAnhGoc.Padding = new System.Windows.Forms.Padding(4);
+            this.gbAnhGoc.Size = new System.Drawing.Size(436, 304);
+            this.gbAnhGoc.TabIndex = 0;
+            this.gbAnhGoc.TabStop = false;
+            this.gbAnhGoc.Text = "Hình Gốc";
+            this.gbAnhGoc.Enter += new System.EventHandler(this.gbAnhGoc_Enter);
+            // 
+            // pbx1
+            // 
+            this.pbx1.Location = new System.Drawing.Point(23, 28);
+            this.pbx1.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx1.Name = "pbx1";
+            this.pbx1.Size = new System.Drawing.Size(173, 160);
+            this.pbx1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx1.TabIndex = 0;
+            this.pbx1.TabStop = false;
+            this.pbx1.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx2
+            // 
+            this.pbx2.Location = new System.Drawing.Point(199, 28);
+            this.pbx2.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx2.Name = "pbx2";
+            this.pbx2.Size = new System.Drawing.Size(173, 160);
+            this.pbx2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx2.TabIndex = 0;
+            this.pbx2.TabStop = false;
+            this.pbx2.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx3
+            // 
+            this.pbx3.Location = new System.Drawing.Point(375, 28);
+            this.pbx3.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx3.Name = "pbx3";
+            this.pbx3.Size = new System.Drawing.Size(173, 160);
+            this.pbx3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx3.TabIndex = 0;
+            this.pbx3.TabStop = false;
+            this.pbx3.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx4
+            // 
+            this.pbx4.Location = new System.Drawing.Point(23, 191);
+            this.pbx4.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx4.Name = "pbx4";
+            this.pbx4.Size = new System.Drawing.Size(173, 160);
+            this.pbx4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx4.TabIndex = 0;
+            this.pbx4.TabStop = false;
+            this.pbx4.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx5
+            // 
+            this.pbx5.Location = new System.Drawing.Point(199, 191);
+            this.pbx5.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx5.Name = "pbx5";
+            this.pbx5.Size = new System.Drawing.Size(173, 160);
+            this.pbx5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx5.TabIndex = 0;
+            this.pbx5.TabStop = false;
+            this.pbx5.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx6
+            // 
+            this.pbx6.Location = new System.Drawing.Point(375, 191);
+            this.pbx6.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx6.Name = "pbx6";
+            this.pbx6.Size = new System.Drawing.Size(173, 160);
+            this.pbx6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx6.TabIndex = 0;
+            this.pbx6.TabStop = false;
+            this.pbx6.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx7
+            // 
+            this.pbx7.Location = new System.Drawing.Point(23, 353);
+            this.pbx7.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx7.Name = "pbx7";
+            this.pbx7.Size = new System.Drawing.Size(173, 160);
+            this.pbx7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx7.TabIndex = 0;
+            this.pbx7.TabStop = false;
+            this.pbx7.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx8
+            // 
+            this.pbx8.Location = new System.Drawing.Point(199, 353);
+            this.pbx8.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx8.Name = "pbx8";
+            this.pbx8.Size = new System.Drawing.Size(173, 160);
+            this.pbx8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx8.TabIndex = 0;
+            this.pbx8.TabStop = false;
+            this.pbx8.Click += new System.EventHandler(this.CachThucDiChuyen);
+            // 
+            // pbx9
+            // 
+            this.pbx9.Location = new System.Drawing.Point(375, 353);
+            this.pbx9.Margin = new System.Windows.Forms.Padding(4);
+            this.pbx9.Name = "pbx9";
+            this.pbx9.Size = new System.Drawing.Size(173, 160);
+            this.pbx9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbx9.TabIndex = 0;
+            this.pbx9.TabStop = false;
+            this.pbx9.Click += new System.EventHandler(this.CachThucDiChuyen);
             // 
             // frmPuzzleGame
             // 
@@ -385,7 +367,6 @@
             this.Controls.Add(this.btnTamDung);
             this.Controls.Add(this.lblThoiGianDem);
             this.Controls.Add(this.lblBuocDi);
-            this.Controls.Add(this.btnBFS);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnChoiLai);
@@ -393,7 +374,7 @@
             this.Controls.Add(this.gbKhung);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmPuzzleGame";
@@ -441,7 +422,6 @@
 		private System.Windows.Forms.Label lblBuocDuyet;
         private System.Windows.Forms.Button btnTamDung;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnBFS;
         private System.Windows.Forms.Button btnTaiAnh;
     }
 }
